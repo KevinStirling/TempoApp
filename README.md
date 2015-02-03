@@ -8,3 +8,6 @@ A mobile app designed for Tempo Networks designed by students of Montclair State
 4. __When pushing__, make sure that there are __no conflicts__. If there are confilicts, make sure that what ever the conflict between the two versions are, it will not harm any other part of the system.
 
 If these guidlines are followed, then everything should run smoothly :)
+
+
+EDIT
