@@ -1,10 +1,21 @@
 package radtech.tempoapp;
 
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.astuetz.PagerSlidingTabStrip;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -16,8 +27,14 @@ public class MainActivity extends ActionBarActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.nav_toolbar);
         setSupportActionBar(toolbar);
-    }
 
+        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+
+        // Bind the tabs to the ViewPager
+        PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
+        tabs.setViewPager(pager);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -40,4 +57,44 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public class MyPagerAdapter extends FragmentPagerAdapter {
+
+        public MyPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch(position){
+                case 0:
+                    return "Tab 1";
+                case 1:
+                    return "Tab2";
+                case 2:
+                    return "Tab3";
+            }
+            return null;
+        }
+        @Override
+        public int getCount() {
+            return 3;
+        }
+        @Override
+        public Fragment getItem(int position) {
+            switch(position)
+            {
+                case 0:
+                    return new FragmentA();
+                case 1:
+                    return new FragmentB();
+                case 2:
+                    return new FragmentC();
+            }
+            return null;
+        }
+
+    }
+
+
+
 }
