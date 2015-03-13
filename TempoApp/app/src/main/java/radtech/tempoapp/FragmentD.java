@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 /**
  * Created by kevinyoung on 2/22/15.
  */
-public class FragmentC extends Fragment {
+public class FragmentD extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_c,container,false);
+        return inflater.inflate(R.layout.fragment_d,container,false);
     }
 }

@@ -67,20 +67,23 @@ public class MainActivity extends ActionBarActivity {
         public CharSequence getPageTitle(int position) {
             switch(position){
                 case 0:
-                    return "Tab 1";
+                    return "Welcome";
                 case 1:
-                    return "Tab2";
+                    return "CCC";
                 case 2:
-                    return "Tab3";
+                    return "Talk'r";
+                case 3:
+                    return "Kids";
             }
             return null;
         }
         @Override
         public int getCount() {
-            return 3;
+            return 4;
         }
         @Override
         public Fragment getItem(int position) {
+
             switch(position)
             {
                 case 0:
@@ -89,6 +92,8 @@ public class MainActivity extends ActionBarActivity {
                     return new FragmentB();
                 case 2:
                     return new FragmentC();
+                case 3:
+                    return new FragmentD();
             }
             return null;
         }
