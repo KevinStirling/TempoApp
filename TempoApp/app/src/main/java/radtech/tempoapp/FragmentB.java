@@ -17,7 +17,7 @@ public class FragmentB extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         String[] values = new String[] { "Music Video 1", "Music Video 2", "Music Video 3",
                 "Music Video 3", "Music Video 4", "Music Video 5", "Music Video 6", "Music Video 7",
-                "Linux", "OS/2" };
+                "Music Video 8", "Music Video 9" };
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1, values);
         setListAdapter(adapter);

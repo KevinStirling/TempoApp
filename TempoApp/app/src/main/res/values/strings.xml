@@ -4,5 +4,6 @@
     <string name="app_name">TempoApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="view_results">View Results</string>
 
 </resources>
