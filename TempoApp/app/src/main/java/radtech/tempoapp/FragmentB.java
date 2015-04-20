@@ -28,7 +28,12 @@ public class FragmentB extends ListFragment {
     public void onListItemClick(ListView l, View v, int position, long id) {
         // do something with the data
     }
-    
+
+
+    //private string smsBody = "I vote for " + voteChoice + "\n from voter ID number " + IDnumber;
+    //The voteChoice comes from the video that is chosen.  The IDnumber comes from the login account number.
+    //private int addressNumber = 3458;
+    //There is a specific number the text message needs to be sent to.  That number may be based on the location that the message is sent from.
     
 //    public void invokeSMSApp() {
 //        Intent smsIntent = new Intent(Intent.ACTION_VIEW);
