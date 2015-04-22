@@ -1,5 +1,6 @@
 package radtech.tempoapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
@@ -24,9 +25,15 @@ public class FragmentB extends ListFragment {
         return inflater.inflate(R.layout.fragment_b,container,false);
     }
 
+    public void logIn(View view) {
+        Intent LoginActivity = new Intent(FragmentB.this.getActivity(), LoginActivity.class);
+        startActivity(LoginActivity);
+    }
+
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         // do something with the data
+        logIn(v);
     }
     
     //private string smsBody = "I vote for " + voteChoice + "\n from voter ID number " + IDnumber;
@@ -34,13 +41,13 @@ public class FragmentB extends ListFragment {
     //private int addressNumber = 3458;
     //There is a specific number the text message needs to be sent to.  That number may be based on the location that the message is sent from.
     
-//    public void invokeSMSApp() {
-//        Intent smsIntent = new Intent(Intent.ACTION_VIEW);
-//
-//        smsIntent.putExtra("sms_body", "Hello World!");
-//        smsIntent.putExtra("address", "0123456789");
-//        smsIntent.setType("vnd.android-dir/mms-sms");
-//
-//        startActivity(smsIntent);
-//   }
+    public void invokeSMSApp() {
+        Intent smsIntent = new Intent(Intent.ACTION_VIEW);
+
+        smsIntent.putExtra("sms_body", "Hello World!");
+        smsIntent.putExtra("address", "0123456789");
+        smsIntent.setType("vnd.android-dir/mms-sms");
+
+        startActivity(smsIntent);
+   }
 }
