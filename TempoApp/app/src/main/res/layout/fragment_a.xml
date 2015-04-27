@@ -13,26 +13,25 @@
         android:text="Welcome to the Tempo Networks app! Use the tabs above to find what you need!"
         android:id="@+id/textView"
         android:gravity="center"
+        android:layout_marginTop="190dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentStart="true" />
 
     <ImageView
 
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:src="@drawable/logo1"
         android:contentDescription="TempoLogo"
 
 
-        />
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="51dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
 
