@@ -13,7 +13,30 @@
         android:gravity="center"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentRight="true" />
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
+
+
+
+    <!--
+    <manifest ... >
+    <uses-permission android:name="android.permission.INTERNET" />
+    ...
+    </manifest>
+
+
+    Tempo kids website
+    WebView myWebView = (WebView) findViewById(R.id.webview);
+    myWebView.loadUrl("http://www.gottempo.com/home/shows/jjandfriends");
+
+
+    https://developer.android.com/guide/webapps/webview.html
+            -->
