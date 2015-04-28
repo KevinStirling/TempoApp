@@ -40,10 +40,11 @@
 
     <!-- Log-In button -->
     <Button
-        android:id="@+id/create_event"
+        android:id="@+id/login"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/login"
-        android:layout_margin="8dp" />
+        android:layout_margin="8dp"
+        android:onClick="selfDestruct"/>
 
 </LinearLayout>

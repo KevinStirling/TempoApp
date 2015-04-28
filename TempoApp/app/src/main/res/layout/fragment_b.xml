@@ -7,8 +7,15 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginbutton"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="View Results"
-        android:id="@+id/button"
+        android:id="@+id/viewresultsbutton"
         android:layout_gravity="center"/>
 
     <ListView
