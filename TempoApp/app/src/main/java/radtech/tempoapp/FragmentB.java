@@ -30,7 +30,7 @@ public class FragmentB extends ListFragment {
         //THIS STRING ARRAY STORES THE NAME OF EACH MUSIC VIDEO THAT IS AVAILABLE FOR VOTING. THE ArrayAdapter THEN PREPARES THE ARRAY TO BE DISPLAYED IN THE LISTVIEW
         String[] values = new String[] { "Music Video 1", "Music Video 2", "Music Video 3",
                 "Music Video 3", "Music Video 4", "Music Video 5", "Music Video 6", "Music Video 7",
-                "Music Video 8", "Music Video 9" };
+                "Music Video 8", "Music Video 9", "Music Video 10" };
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1, values);
         setListAdapter(adapter);
