@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 /**
  * Created by kevinyoung on 2/22/15.
+ * This Fragment provides the Tempo Talk'r functionality. It displays a dialer.
  */
 public class FragmentC extends Fragment {
     @Override

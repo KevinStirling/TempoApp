@@ -10,6 +10,6 @@
     <style name="MyActionBar"
         parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">@drawable/ab_solid_tempostyle</item>
-<!--create tool bar style?-->
+
     </style>
 </resources>

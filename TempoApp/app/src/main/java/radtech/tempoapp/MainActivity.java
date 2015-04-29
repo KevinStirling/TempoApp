@@ -7,19 +7,19 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.astuetz.PagerSlidingTabStrip;
 
-import java.util.ArrayList;
-
+/**
+ * Created by kevinyoung on 2/22/15.
+ * The MainActivity class creates the navigation tabs for the app, and is where every single fragment
+ * is contained.
+ */
 
 public class MainActivity extends ActionBarActivity {
 
+    //THE onCreateView METHOD SETS UP THE VIEW FOR THE FRAGMENT. EVERYTHING THAT IS DISPLAYED ON THE SCREEN PHYSICALLY IS DECLARED HERE
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +36,7 @@ public class MainActivity extends ActionBarActivity {
         tabs.setViewPager(pager);
     }
 
+    //onCreateOptionsMenu INFLATES THE MENU INTO THE ACTIONBAR
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -43,21 +44,19 @@ public class MainActivity extends ActionBarActivity {
         return true;
     }
 
+    //onOptionsItemsSelected HANDLES CLICKS ON THE INDIVIDUAL NAVIGATION TABS
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
+    //MyPagerAdapter adapts a list of fragments into the tabs in the action bar
     public class MyPagerAdapter extends FragmentPagerAdapter {
 
         public MyPagerAdapter(FragmentManager fm) {
@@ -99,7 +98,5 @@ public class MainActivity extends ActionBarActivity {
         }
 
     }
-
-
 
 }

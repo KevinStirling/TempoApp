@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
+    <!-- ToolBar -->
     <android.support.v7.widget.Toolbar
         android:id="@+id/nav_toolbar"
         android:layout_height="wrap_content"
@@ -12,19 +12,19 @@
         android:minHeight="?attr/actionBarSize"
         android:background="#ffe6dfe4"/>
 
+    <!-- Navigation Tabs -->
     <com.astuetz.PagerSlidingTabStrip
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="48dip"
         android:layout_below="@+id/nav_toolbar"/>
 
+    <!-- Fragment ViewPager -->
         <android.support.v4.view.ViewPager
             android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/tabs"/>
-
-
 
 </RelativeLayout>
 

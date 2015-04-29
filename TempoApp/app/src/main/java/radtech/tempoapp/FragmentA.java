@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 
 /**
  * Created by kevinyoung on 2/22/15.
+ * This Fragment displays the welcome message when the user open the app, and is the first thing the user
+ * will see. It displays instructions on how to navigate the app.
  */
 public class FragmentA extends Fragment {
     @Override

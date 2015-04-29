@@ -4,6 +4,7 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="#3536d1bc">
 
+    <!-- title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,6 +16,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true" />
 
+    <!-- begin dialer buttons -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -179,5 +181,7 @@
         android:layout_alignEnd="@+id/button13"
         android:layout_toRightOf="@+id/button12"
         android:layout_toEndOf="@+id/button12" />
+
+    <!-- end dialer buttons -->
 
 </RelativeLayout>

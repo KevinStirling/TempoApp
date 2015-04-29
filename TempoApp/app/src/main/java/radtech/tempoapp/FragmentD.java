@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 /**
  * Created by kevinyoung on 2/22/15.
+ * This fragment is for the Tempo Kids functionality
  */
 public class FragmentD extends Fragment {
     @Override

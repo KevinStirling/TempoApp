@@ -4,6 +4,7 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="#3536d1bc" android:orientation="vertical">
 
+    <!-- login button -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,6 +12,7 @@
         android:id="@+id/loginbutton"
         android:layout_gravity="center_horizontal" />
 
+    <!-- view results button -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,6 +20,7 @@
         android:id="@+id/viewresultsbutton"
         android:layout_gravity="center"/>
 
+    <!-- creates listview for displaying voting options -->
     <ListView
         android:id="@android:id/list"
         android:layout_height="wrap_content"
@@ -25,6 +28,4 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-
 </LinearLayout>
