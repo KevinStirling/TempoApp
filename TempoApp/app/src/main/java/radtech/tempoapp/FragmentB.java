@@ -60,6 +60,7 @@ public class FragmentB extends ListFragment {
         }else {
             String data=(String)l.getItemAtPosition(position);
             invokeSMSApp(data);
+            //ADD SOMETHING TO BRING THE USER BACK TO THE APP
         }
     }
 
@@ -71,9 +72,10 @@ public class FragmentB extends ListFragment {
     
     public void invokeSMSApp(String data) {
         Intent smsIntent = new Intent(Intent.ACTION_VIEW);
-        smsIntent.setData(Uri.parse("smsto:" + Uri.encode("12345678")));
+        smsIntent.setData(Uri.parse("smsto:" + Uri.encode("9084619650")));
         smsIntent.putExtra("sms_body", "I vote for "+data);
-
+        smsIntent.putExtra("exit_on_sent", true);
+        
 
         startActivity(smsIntent);
    }
