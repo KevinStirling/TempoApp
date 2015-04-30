@@ -5,6 +5,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.text.Spanned;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 
 /**
  * Created by kevinyoung on 2/22/15.
@@ -13,6 +17,17 @@ import android.view.ViewGroup;
 public class FragmentD extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        /**
+         *
+
+        View v = getView();
+        TextView link = (TextView) v.findViewById(R.id.textLink);
+        final Spanned s = Html.fromHtml("<p><a href='http://www.gottempo.com/home/shows/jjandfriends'>Tempo Kids</a></p><br/><br/><br/>"
+        + "<p><a href='http://www.tempowater.comm'>Tempo water</a></p>");
+        link.setText(s);
+        link.setMovementMethod(LinkMovementMethod.getInstance());
+         */
         return inflater.inflate(R.layout.fragment_d,container,false);
+
     }
 }
