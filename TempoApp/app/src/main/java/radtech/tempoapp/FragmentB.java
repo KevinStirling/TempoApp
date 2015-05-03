@@ -91,7 +91,7 @@ public class FragmentB extends ListFragment {
     //invokeSMSApp OPENS SMS APPLICATION WITH THE VOTING OPTION THE USER SELECTED IN THE MESSAGE BODY, ADDRESSED TO THE TEXT MESSAGE SERVICE FOR VOTING
     public void invokeSMSApp(String data) {
         Intent smsIntent = new Intent(Intent.ACTION_VIEW);
-        smsIntent.setData(Uri.parse("smsto:" + Uri.encode("9084619650")));
+        smsIntent.setData(Uri.parse("smsto:" + Uri.encode("9736928890")));
         smsIntent.putExtra("sms_body", "I vote for "+data);
         smsIntent.putExtra("exit_on_sent", true);
         startActivity(smsIntent);
