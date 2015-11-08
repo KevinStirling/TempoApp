@@ -22,7 +22,8 @@ public class FragmentD extends Fragment {
         View v = inflater.inflate(R.layout.fragment_d, container, false);
         TextView link = (TextView) v.findViewById(R.id.textLink);
         final Spanned s = Html.fromHtml("<br/><br/><br/><p><a href='http://www.gottempo.com/home/shows/jjandfriends'>Tempo Kids</a></p><br/><br/><br/>"
-        + "<p><a href='http://www.tempowater.com'>Tempo water</a></p>");
+        + "<p><a href='http://www.tempowater.com'>Tempo water</a></p><br/><br/><br/>"
+        + "<p><a href='https://www.youtube.com/user/gottempo'>Watch Tempo videos</a></p>");
         link.setText(s);
         link.setMovementMethod(LinkMovementMethod.getInstance());
         return v;
